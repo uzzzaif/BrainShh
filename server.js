@@ -8,7 +8,7 @@ dotenv.config();
 
 const app = express();
 const PORT = 8080;
-const distPath = path.join(__dirname, '..', 'dist');
+const distPath = path.join(__dirname, 'dist');
 const hasDist = fs.existsSync(distPath) && fs.existsSync(path.join(distPath, 'index.html'));
 
 const crisisKeywords = [

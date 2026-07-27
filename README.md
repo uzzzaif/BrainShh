@@ -47,8 +47,9 @@ BrainShh/
 │   ├── index.html            # Main HTML page
 │   ├── style.css             # Complete stylesheet
 │   └── script.js             # Client-side logic & AI integration
+├── server.js                 # Stateless Express server with mock AI and static file serving
 ├── backend/
-│   └── server.js             # Stateless Express server with mock AI and static file serving
+│   └── controllers, middleware, routes, and legacy services
 ├── package.json
 ├── .env.example
 ├── .gitignore
@@ -77,6 +78,13 @@ BrainShh is designed to be lightweight and stateless. No user data is persisted 
 - The server listens on **port 8080**.
 - The backend serves the `dist/` folder when it exists and falls back gracefully when it does not.
 - This layout is ready for AWS Elastic Beanstalk deployment with a fixed listener port.
+
+## Deployment — Vercel
+
+- The project is configured to deploy as a static site from `dist/`.
+- All `/api/*` requests are handled by a serverless catch-all function in `api/[...path].js`.
+- Add the repository to Vercel and deploy without a separate backend process.
+- The app remains stateless and does not require a database or external AI key for testing.
 
 ## Security Notes
 

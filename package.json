@@ -2,11 +2,11 @@
   "name": "brainshh",
   "version": "1.0.0",
   "description": "AI Mental Wellness web application — stateless, AWS Elastic Beanstalk ready",
-  "main": "backend/server.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node backend/server.js",
+    "start": "node server.js",
     "build": "echo \"No build step needed for BrainShh\"",
-    "dev": "nodemon backend/server.js"
+    "dev": "nodemon server.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
