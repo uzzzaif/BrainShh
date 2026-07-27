@@ -1,0 +1,29 @@
+{
+  "name": "brainshh",
+  "version": "1.0.0",
+  "description": "AI Mental Wellness web application — stateless, AWS Elastic Beanstalk ready",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "build": "echo \"No build step needed for BrainShh\"",
+    "dev": "nodemon backend/server.js"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-rate-limit": "^7.1.4",
+    "helmet": "^7.1.0",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "keywords": [
+    "mental-health",
+    "wellness",
+    "ai"
+  ],
+  "license": "MIT"
+}
